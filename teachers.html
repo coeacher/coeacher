@@ -8,54 +8,53 @@
 
 <h1>Available Teachers</h1>
 
-<div class="teacher">
-  <h3>John Doe</h3>
-  <p>📘 Math Teacher</p>
-  <p>🧠 10 years experience</p>
-  <button>Contact</button>
+<input type="text" id="search" placeholder="Search by subject or name..." onkeyup="filterTeachers()">
+
+<div id="teacherList">
+
+  <div class="teacher" data-subject="math">
+    <img src="https://via.placeholder.com/100">
+    <h3>John Doe</h3>
+    <p>📘 Math Teacher</p>
+    <p>🧠 10 years experience</p>
+    <button onclick="bookTeacher('John Doe')">Book</button>
+  </div>
+
+  <div class="teacher" data-subject="english">
+    <img src="https://via.placeholder.com/100">
+    <h3>Sarah Lindström</h3>
+    <p>📖 English & Literature</p>
+    <p>🧠 8 years experience</p>
+    <button onclick="bookTeacher('Sarah Lindström')">Book</button>
+  </div>
+
+  <div class="teacher" data-subject="physics">
+    <img src="https://via.placeholder.com/100">
+    <h3>Ahmed Hassan</h3>
+    <p>🔬 Physics Teacher</p>
+    <p>🧠 12 years experience</p>
+    <button onclick="bookTeacher('Ahmed Hassan')">Book</button>
+  </div>
+
+  <div class="teacher" data-subject="chemistry">
+    <img src="https://via.placeholder.com/100">
+    <h3>Maria Gonzalez</h3>
+    <p>🧪 Chemistry Teacher</p>
+    <p>🧠 9 years experience</p>
+    <button onclick="bookTeacher('Maria Gonzalez')">Book</button>
+  </div>
+
+  <div class="teacher" data-subject="programming">
+    <img src="https://via.placeholder.com/100">
+    <h3>Erik Johansson</h3>
+    <p>💻 Computer Science</p>
+    <p>🧠 6 years experience</p>
+    <button onclick="bookTeacher('Erik Johansson')">Book</button>
+  </div>
+
 </div>
 
-<div class="teacher">
-  <h3>Sarah Lindström</h3>
-  <p>📖 English & Literature</p>
-  <p>🧠 8 years experience</p>
-  <button>Contact</button>
-</div>
-
-<div class="teacher">
-  <h3>Ahmed Hassan</h3>
-  <p>🔬 Physics Teacher</p>
-  <p>🧠 12 years experience</p>
-  <button>Contact</button>
-</div>
-
-<div class="teacher">
-  <h3>Maria Gonzalez</h3>
-  <p>🧪 Chemistry Teacher</p>
-  <p>🧠 9 years experience</p>
-  <button>Contact</button>
-</div>
-
-<div class="teacher">
-  <h3>Erik Johansson</h3>
-  <p>💻 Computer Science</p>
-  <p>🧠 6 years experience</p>
-  <button>Contact</button>
-</div>
-
-<div class="teacher">
-  <h3>Li Wei</h3>
-  <p>🌏 Mandarin Language</p>
-  <p>🧠 7 years experience</p>
-  <button>Contact</button>
-</div>
-
-<div class="teacher">
-  <h3>Anna Svensson</h3>
-  <p>📊 Economics</p>
-  <p>🧠 11 years experience</p>
-  <button>Contact</button>
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
